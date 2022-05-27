@@ -77,7 +77,7 @@ function setup() {
   button = createImg('cut_btn.png');
   button.position(200,320);
   button.size(50,50);
-
+button.mouseClicked(drop);
   button2 = createImg('cut_btn.png');
   button2.position(30,420);
   button2.size(50,50);
@@ -88,7 +88,7 @@ function setup() {
   
   //button2.mouseClick(drop);
 
-  //button2.mouseClicked(drop);
+  button2.mouseClicked(drop);
 
   ellipseMode(RADIUS);
 }
@@ -119,7 +119,7 @@ function draw()
     fruit = null;
     //bunny.change('eating');
 
-    //bunny.changeAnimation('eating');
+    bunny.changeAnimation('eating');
 
     //bunny.changeAnimation();
 
